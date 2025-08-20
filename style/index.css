@@ -193,9 +193,9 @@ be used with `--jp-layout-color1`. The numbers have the following meanings:
    * In a light theme, these go from dark to light.
    */
 
-  --jp-ui-font-color0: #F8F8F2;  /* Monokai primary text */
-  --jp-ui-font-color1: #F8F8F2;  /* Monokai main text */
-  --jp-ui-font-color2: #CFCFC2;  /* Monokai secondary text */
+  --jp-ui-font-color0: #D3D3D3;  /* Softer primary text */
+  --jp-ui-font-color1: #D3D3D3;  /* Softer main text */
+  --jp-ui-font-color2: #B8B8B8;  /* Softer secondary text */
   --jp-ui-font-color3: #75715E;  /* Monokai disabled text */
 
   /* Defaults use Material Design specification */
@@ -481,25 +481,25 @@ be used with `--jp-layout-color1`. The numbers have the following meanings:
 */
 
   /* Code mirror specific styles */
-  --jp-mirror-editor-keyword-color: #F92672;     /* Monokai pink - keywords */
-  --jp-mirror-editor-atom-color: #AE81FF;        /* Monokai purple - atoms */
-  --jp-mirror-editor-number-color: #AE81FF;      /* Monokai purple - numbers */
-  --jp-mirror-editor-def-color: #A6E22E;         /* Monokai green - definitions */
-  --jp-mirror-editor-variable-color: #F8F8F2;    /* Monokai white - variables */
-  --jp-mirror-editor-variable-2-color: #66D9EF;  /* Monokai blue - special vars */
-  --jp-mirror-editor-variable-3-color: #66D9EF;  /* Monokai blue - types */
-  --jp-mirror-editor-punctuation-color: #F8F8F2; /* Monokai white - punctuation */
-  --jp-mirror-editor-property-color: #F8F8F2;    /* Monokai white - properties */
-  --jp-mirror-editor-operator-color: #F92672;    /* Monokai pink - operators */
-  --jp-mirror-editor-comment-color: #75715E;     /* Monokai gray - comments */
-  --jp-mirror-editor-string-color: #E6DB74;      /* Monokai yellow - strings */
-  --jp-mirror-editor-string-2-color: #E6DB74;    /* Monokai yellow - docstrings */
-  --jp-mirror-editor-meta-color: #E6DB74;        /* Monokai yellow - meta */
-  --jp-mirror-editor-qualifier-color: #A6E22E;   /* Monokai green - qualifiers */
-  --jp-mirror-editor-builtin-color: #66D9EF;     /* Monokai blue - builtins */
-  --jp-mirror-editor-bracket-color: #F8F8F2;     /* Monokai white - brackets */
-  --jp-mirror-editor-tag-color: #F92672;         /* Monokai pink - HTML tags */
-  --jp-mirror-editor-attribute-color: #A6E22E;   /* Monokai green - attributes */
+  --jp-mirror-editor-keyword-color: #F6547D;     /* Very vibrant pink - keywords */
+  --jp-mirror-editor-atom-color: #C49AEF;        /* Very vibrant purple - atoms */
+  --jp-mirror-editor-number-color: #C49AEF;      /* Very vibrant purple - numbers */
+  --jp-mirror-editor-def-color: #A8DC50;         /* Very vibrant green - definitions */
+  --jp-mirror-editor-variable-color: #F5F5ED;    /* Very vibrant white - variables */
+  --jp-mirror-editor-variable-2-color: #92D3F1;  /* Very vibrant blue - special vars */
+  --jp-mirror-editor-variable-3-color: #92D3F1;  /* Very vibrant blue - types */
+  --jp-mirror-editor-punctuation-color: #F5F5ED; /* Very vibrant white - punctuation */
+  --jp-mirror-editor-property-color: #F5F5ED;    /* Very vibrant white - properties */
+  --jp-mirror-editor-operator-color: #F6547D;    /* Very vibrant pink - operators */
+  --jp-mirror-editor-comment-color: #75715E;     /* Keep comments as is */
+  --jp-mirror-editor-string-color: #E2D773;      /* Very vibrant yellow - strings */
+  --jp-mirror-editor-string-2-color: #E2D773;    /* Very vibrant yellow - docstrings */
+  --jp-mirror-editor-meta-color: #E2D773;        /* Very vibrant yellow - meta */
+  --jp-mirror-editor-qualifier-color: #A8DC50;   /* Very vibrant green - qualifiers */
+  --jp-mirror-editor-builtin-color: #92D3F1;     /* Very vibrant blue - builtins */
+  --jp-mirror-editor-bracket-color: #F5F5ED;     /* Very vibrant white - brackets */
+  --jp-mirror-editor-tag-color: #F6547D;         /* Very vibrant pink - HTML tags */
+  --jp-mirror-editor-attribute-color: #A8DC50;   /* Very vibrant green - attributes */
 
   --jp-mirror-editor-header-color: var(--md-blue-500);
   --jp-mirror-editor-quote-color: var(--md-green-300);
