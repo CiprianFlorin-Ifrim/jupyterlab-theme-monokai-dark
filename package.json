@@ -1,0 +1,66 @@
+{
+  "name": "jupyterlab-theme-monokai-dark",
+  "version": "1.0.0",
+  "description": "Monokai theme for JupyterLab - Classic dark theme with vibrant syntax highlighting",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme"
+  ],
+  "homepage": "https://github.com/CiprianFlorin-Ifrim/jupyterlab-theme-monokai-dark",
+  "bugs": {
+    "url": "https://github.com/CiprianFlorin-Ifrim/jupyterlab-theme-monokai-dark/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Ciprian-Florin Ifrim",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,js}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CiprianFlorin-Ifrim/jupyterlab-theme-monokai-dark.git"
+  },
+  "scripts": {
+    "build": "jlpm build:lib && jlpm build:labextension:dev",
+    "build:prod": "jlpm clean && jlpm build:lib && jlpm build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "clean": "jlpm clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupyterlab_theme_monokai_dark/labextension",
+    "clean:all": "jlpm clean:lib && jlpm clean:labextension",
+    "install:extension": "jlpm build",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^4.0.0",
+    "@jupyterlab/apputils": "^4.0.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^4.4.6",
+    "@types/json-schema": "^7.0.15",
+    "@types/react": "^19.1.10",
+    "rimraf": "^5.0.5",
+    "typescript": "~5.0.2"
+  },
+  "sideEffects": [
+    "style/*.css",
+    "style/index.js"
+  ],
+  "styleModule": "style/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "jupyterlab_theme_monokai_dark/labextension",
+    "themePath": "style/index.css"
+  }
+}
